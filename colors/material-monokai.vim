@@ -78,12 +78,12 @@ endfunction
 " --------
 
 
-let s:white       = { "gui": "#CDD3DE", "cterm": "253" }
+let s:white       = { "gui": "#D4D4D4", "cterm": "253" }
 let s:black       = { "gui": "#212121", "cterm": "235" }
 let s:lightblack  = { "gui": "#2D2E27", "cterm": "234" }
 let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }
-let s:darkblack   = { "gui": "#1F292D", "cterm": "233" }
-let s:grey        = { "gui": "#3F565F", "cterm": "238" }
+let s:darkblack   = { "gui": "#222222", "cterm": "233" }
+let s:grey        = { "gui": "#808080", "cterm": "238" }
 let s:lightgrey   = { "gui": "#575b61", "cterm": "241" }
 let s:darkgrey    = { "gui": "#232E33", "cterm": "236" }
 let s:coolgrey    = { "gui": "#506E79", "cterm": "241" }
@@ -111,7 +111,7 @@ let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
 call s:h("Normal",        { "fg": s:white,      "bg": s:black })
 call s:h("ColorColumn",   {                     "bg": s:lightgrey })
 call s:h("CursorColumn",  {                     "bg": s:lightblack2 })
-call s:h("CursorLine",    {                     "bg": s:darkblack })
+call s:h("CursorLine",    {                     "bg": s:lightblack })
 call s:h("NonText",       { "fg": s:lightgrey })
 call s:h("StatusLine",    { "fg": s:white,      "bg": s:darkblack })
 call s:h("StatusLineNC",  { "fg": s:darkgrey,   "bg": s:coolgrey,     "format": "reverse" })
@@ -236,7 +236,7 @@ call s:h("NERDTreeBookmarkName",    { "fg": s:yellow })
 call s:h("NERDTreeCWD",             { "fg": s:pink })
 call s:h("NERDTreeUp",              { "fg": s:white })
 call s:h("NERDTreeDirSlash",        { "fg": s:grey })
-call s:h("NERDTreeDir",             { "fg": s:coolgrey })
+call s:h("NERDTreeDir",             { "fg": s:white })
 
 " Syntastic
 " ---------
